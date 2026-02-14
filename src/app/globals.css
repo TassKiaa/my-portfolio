@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  /* Background from reference image (Bone) */
+  --color-background: #E5D7C4;
+  
+  /* Primary Accent (Deep Purple) - for button text or active states */
+  --color-primary: #4C1D95;
+  
+  /* Box/Button Background (Lavender) */
+  --color-surface: #E6E6FA;
+  
+  /* Dark Text for readability (Café Noir style) */
+  --color-accent: #4C3D19;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientSlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradientSlow {
+  background-size: 200% 200%;
+  animation: gradientSlow 20s ease infinite;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(40px) translateX(20px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+.animate-floatSlow {
+  animation: floatSlow 18s ease-in-out infinite;
+}
+
+.animate-floatSlowReverse {
+  animation: floatSlow 22s ease-in-out infinite reverse;
+}
