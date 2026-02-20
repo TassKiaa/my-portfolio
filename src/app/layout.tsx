@@ -10,10 +10,13 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen text-[#4C3D19] overflow-x-hidden">
+      {/* 1. Added 'bg-background' and changed text color to 'text-accent' */}
+      <body className="relative min-h-screen bg-background text-accent overflow-x-hidden antialiased">
 
-        {/* Particles Background */}
-        <ParticlesBackground />
+       
+        <div className="fixed inset-0 -z-10">
+           <ParticlesBackground />
+        </div>
 
         <main className="relative max-w-5xl mx-auto px-6 md:px-10 py-16">
           {children}

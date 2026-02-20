@@ -11,33 +11,70 @@ export default function ParticlesBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 bg-gradient-to-b from-[#fdf6e3] to-[#ffe4e1]">
+    /* Removed the light gradient classes so your dark global CSS is visible */
+    <div className="fixed inset-0 -z-10">
       <Particles
         className="absolute inset-0"
         init={particlesInit}
         options={{
-          background: { color: { value: "transparent" } }, // transparent, CSS handles gradient
+          background: { color: { value: "transparent" } },
+          fpsLimit: 120,
           particles: {
-            number: { value: 25 }, // fewer for airy effect
-            color: { value: ["#ffd1dc", "#b0e0e6", "#ffe4b5"] }, // pastel colors
+            number: { 
+              value: 100, // Increased for a star-field effect
+              density: { enable: true, area: 800 } 
+            },
+            color: { 
+              value: ["#06b6d4", "#ffffff", "#7dd3fc"] // Cyan and White stars
+            },
             shape: { type: "circle" },
-            opacity: { value: 0.6 },
+            opacity: {
+              value: { min: 0.1, max: 0.7 }, // Different brightness levels
+              animation: {
+                enable: true,
+                speed: 1,      // Twinkle speed
+                minimumValue: 0.1,
+                sync: false,
+              },
+            },
             size: {
-              value: { min: 10, max: 40 }, // larger "bubble" sizes
-              random: true, // vary size
+              value: { min: 1, max: 3 }, // Much smaller, like real stars
+              random: true,
             },
             move: {
               enable: true,
-              speed: 0.1, // very slow drift
-              direction: "top", // float upwards
+              speed: 0.4, // Slow, peaceful drift
+              direction: "none",
+              random: true,
+              straight: false,
               outModes: { default: "out" },
             },
-            links: { enable: false },
+            // Added glowing lines (optional, common in tech portfolios)
+            links: {
+              enable: true,
+              distance: 150,
+              color: "#06b6d4",
+              opacity: 0.1,
+              width: 1,
+            },
           },
           interactivity: {
-            events: { onHover: { enable: true, mode: "bubble" } },
-            modes: { bubble: { distance: 80, size: 50, duration: 2 } },
+            events: {
+              onHover: {
+                enable: true,
+                mode: "grab", // Connects stars to your mouse
+              },
+              onClick: {
+                enable: true,
+                mode: "push", // Adds more stars when you click
+              },
+            },
+            modes: {
+              grab: { distance: 140, links: { opacity: 0.4 } },
+              push: { quantity: 4 },
+            },
           },
+          detectRetina: true,
         }}
       />
     </div>
