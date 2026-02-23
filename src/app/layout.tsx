@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      {/* 1. Added 'bg-background' and changed text color to 'text-accent' */}
+     
       <body className="relative min-h-screen bg-background text-accent overflow-x-hidden antialiased">
 
        

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center pt-20">
-      {/* 1. Top Corner Logo - Branding your portfolio */}
+      {/* 1. Top Corner Logo - Branding  portfolio */}
       <div className="absolute top-10 left-0">
         <span className="text-xl font-black tracking-tighter text-accent">
           T.<span className="text-primary text-glow">KHANAM</span>
@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-        {/* Left Side: Your Introduction */}
+        {/* Left Side:Introduction */}
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* 2. Right Side: Floating Tech Card (Fills the gap) */}
+        {/* 2. Right Side: Floating Tech Card  */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -74,7 +74,7 @@ export default function Hero() {
               ))}
             </div>
             
-            {/* Minimal Code Decoration */}
+           
             <div className="mt-6 pt-6 border-t border-primary/10">
               <p className="text-xs font-mono text-primary/60">
                 const dev = &#123; <br />

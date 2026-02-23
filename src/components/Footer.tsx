@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="py-10 border-t border-primary/10 text-center">
       <div className="space-y-4">
-        {/* Simple Brand Name */}
+        {/*Brand Name */}
         <p className="text-sm font-bold tracking-widest text-accent">
           T.<span className="text-primary">KHANAM</span>
         </p>

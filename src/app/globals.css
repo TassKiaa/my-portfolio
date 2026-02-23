@@ -28,7 +28,7 @@ body::before {
   animation: nebulaPulse 20s ease-in-out infinite alternate;
 }
 
-/* Extra Glow layer for depth */
+
 body::after {
   content: "";
   position: fixed;
@@ -49,7 +49,7 @@ body::after {
   100% { transform: rotate(0deg) translate(0, 0); }
 }
 
-/* Project Card Styling to match the "Space" look */
+/* Project Card Styling  */
 .animate-card {
   background: rgba(15, 23, 42, 0.6); /* Semi-transparent */
   backdrop-filter: blur(12px);      /* Glass effect */

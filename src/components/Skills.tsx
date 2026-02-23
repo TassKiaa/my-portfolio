@@ -7,7 +7,7 @@ export default function Skills() {
 
   const skillData = {
     Frontend: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    Backend: ["Node.js", "Express", "MySQL", "PostgreSQL"],
+    Backend: ["Node.js", "Express", "MySQL",],
     "AI & Data": ["Python", "Machine Learning", "Kaggle", "Research", "Data Analysis"],
     Tools: ["GitHub", "Figma", "LaTeX", "Vercel", "Google Colab"],
   };
@@ -16,12 +16,12 @@ export default function Skills() {
     <section id="skills" className="py-24 px-6 scroll-mt-20">
       <div className="max-w-4xl mx-auto">
         
-        {/* Simple Elegant Header */}
+        {/* Header */}
         <h2 className="text-3xl font-bold mb-12 text-accent text-center">
           Technical <span className="text-primary text-glow">Expertise</span>
         </h2>
 
-        {/* The 2x2 Responsive Grid */}
+        {/* The 2x2  Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
           {Object.entries(skillData).map(([category, items]) => (
             <div

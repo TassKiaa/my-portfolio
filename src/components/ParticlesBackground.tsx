@@ -11,7 +11,7 @@ export default function ParticlesBackground() {
   }, []);
 
   return (
-    /* Removed the light gradient classes so your dark global CSS is visible */
+ 
     <div className="fixed inset-0 -z-10">
       <Particles
         className="absolute inset-0"
@@ -21,7 +21,7 @@ export default function ParticlesBackground() {
           fpsLimit: 120,
           particles: {
             number: { 
-              value: 100, // Increased for a star-field effect
+              value: 100, 
               density: { enable: true, area: 800 } 
             },
             color: { 
@@ -38,7 +38,7 @@ export default function ParticlesBackground() {
               },
             },
             size: {
-              value: { min: 1, max: 3 }, // Much smaller, like real stars
+              value: { min: 1, max: 3 }, 
               random: true,
             },
             move: {
@@ -49,7 +49,7 @@ export default function ParticlesBackground() {
               straight: false,
               outModes: { default: "out" },
             },
-            // Added glowing lines (optional, common in tech portfolios)
+           
             links: {
               enable: true,
               distance: 150,

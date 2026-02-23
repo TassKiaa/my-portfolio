@@ -19,7 +19,7 @@ export default function About() {
           <div className="w-20 h-1 bg-primary mx-auto rounded-full opacity-50"></div>
         </motion.div>
 
-        {/* Main Content Card - Glassmorphism style */}
+        {/* Main Content Card  */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -27,7 +27,7 @@ export default function About() {
           viewport={{ once: true }}
           className="relative p-8 md:p-12 rounded-3xl border border-primary/20 bg-surface/30 backdrop-blur-xl shadow-2xl"
         >
-          {/* Decorative Corner Light */}
+          {/*  Corner Light */}
           <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 blur-[80px] rounded-full"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">

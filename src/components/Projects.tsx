@@ -39,7 +39,7 @@ export default function Projects() {
               viewport={{ once: true }}
               className="overflow-hidden rounded-2xl border border-primary/10 bg-surface/30 backdrop-blur-md flex flex-col hover:border-primary/40 transition-all group"
             >
-              {/* Small Image Header */}
+              {/* Image Header */}
               <div className="h-32 w-full overflow-hidden relative">
                 <div 
                   className="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
